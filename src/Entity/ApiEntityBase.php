@@ -182,8 +182,6 @@ abstract class ApiEntityBase
     public function __set(string $name, $value): ApiEntityInterface
     {
         $this->{$name} = $value;
-
-        return $this;
     }
 
     /**

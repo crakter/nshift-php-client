@@ -34,8 +34,6 @@ trait SetGetCall
     public function __set(string $name, $value)
     {
         $this->{$name} = $value;
-
-        return $this;
     }
 
     /**

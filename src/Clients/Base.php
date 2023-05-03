@@ -217,7 +217,7 @@ abstract class Base
      */
     public function getOptions(): array
     {
-        $this->options['debug'] = true;
+        //$this->options['debug'] = true;
 
         return $this->options;
     }
@@ -522,16 +522,15 @@ abstract class Base
                 $this->getClientUrl(),
                 $this->getOptions()
             );
-            print_r($request);
         } catch (ClientException $e) {
             throw new nShiftClientException(
-                sprintf('Error returned from Bring API when creating from %s. Error message from Bring: %s', get_called_class(), $e->getResponse()->getBody(true)),
+                sprintf('Error returned from nShift API when creating from %s. Error message from nShift: %s', get_called_class(), $e->getResponse()->getBody(true)),
                 0,
                 $e
             );
         } catch (RequestException $e) {
             throw new nShiftClientException(
-                sprintf('Error returned from Bring API when creating from %s. Error message from Bring: %s', get_called_class(), $e->getMessage()),
+                sprintf('Error returned from nShift API when creating from %s. Error message from nShift: %s', get_called_class(), $e->getMessage()),
                 0,
                 $e
             );

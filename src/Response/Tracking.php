@@ -27,22 +27,4 @@ class Tracking
     public $actorName;
     public $carrier;
     public $carrierName;
-    public $product;
-    public $productName;
-    public $submitDate;
-    public $pickupDate;
-    public $isDeleted;
-    public $height;
-    public $length;
-    public $width;
-    public $dimensionalWeight;
-    public $senderAccountAtCarrier;
-    public $payerAccountAtCarrier;
-    public $insuranceGroup;
-    public $labelsCount;
-    public $freightBillsCount;
-    public $orderNumber;
-    public $isAnonymized;
-    public $externalBooked;
-    public $addresses;
 }

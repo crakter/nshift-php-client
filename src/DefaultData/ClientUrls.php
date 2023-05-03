@@ -33,4 +33,7 @@ abstract class ClientUrls
      * Links to search consignor portal
      */
     const SHIPMENTS_BY_ORDER_NUMBER = 'https://customer-api.consignorportal.com/ApiGateway/ShipmentData/Operational/Shipments/ByOrderNumber';
+    const SHIPMENTS_BY_BARCODE = 'https://customer-api.consignorportal.com/ApiGateway/ShipmentData/Operational/Shipments/byBarcode';
+
+    const SHIPMENT = 'https://customer-api.consignorportal.com/ApiGateway/ShipmentData/Operational/Shipments/%s';
 }
